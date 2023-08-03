@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="iTunes_XML_Alternatives.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:iTunes_XML_Alternatives"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Width="800" Height="600">
+        <TextBlock x:Name="lblBeetsDb" HorizontalAlignment="Left" Margin="27,25,0,0" TextWrapping="Wrap" Text="Beets Database File:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBeetsDb" HorizontalAlignment="Left" Margin="217,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.457,0.342" Width="425" TextChanged="txtBeetsDb_TextChanged"/>
+        <TextBlock x:Name="lblSource" HorizontalAlignment="Left" Margin="27,73,0,0" TextWrapping="Wrap" Text="Source iTunes XML File:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSource" HorizontalAlignment="Left" Margin="217,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.457,0.342" Width="425" TextChanged="txtSource_TextChanged"/>
+        <Button x:Name="btnSourceBrowse" Content="Browse..." Margin="656,67,0,0" VerticalAlignment="Top" Width="123" Click="btnSourceBrowse_Click"/>
+        <TextBlock x:Name="lblDestination" HorizontalAlignment="Left" Margin="27,119,0,0" TextWrapping="Wrap" Text="Destination iTunes XML File:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDestination" HorizontalAlignment="Left" Margin="217,112,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.457,0.342" Width="425" TextChanged="txtDestination_TextChanged"/>
+        <Button x:Name="btnDestinationBrowse" Content="Browse..." Margin="656,113,0,0" VerticalAlignment="Top" Width="123" Click="btnDestinationBrowse_Click"/>
+        <Button x:Name="btnBeetsDbBrowse" Content="Browse..." Margin="656,19,0,0" VerticalAlignment="Top" Width="123" Click="btnBeetsDbBrowse_Click"/>
+        <Button x:Name="btnWrite" Content="Write" Margin="519,160,0,0" VerticalAlignment="Top" Width="123" IsEnabled="False" Click="btnWrite_Click"/>
+        <Button x:Name="btnClose" Content="Close" Margin="656,160,0,0" VerticalAlignment="Top" Width="123" Click="btnClose_Click"/>
+    </Grid>
+</Page>
